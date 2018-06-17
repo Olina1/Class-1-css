@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    flex-direction:column;
+    height:800px;
+}
+
+div{
+    background-color: lightcoral;
+    width:100%;
+    height: 1000px;
+}
+
+#h{
+    background-color:gold;
+    height:20%;
+}
+
+#c{
+    background-color: honeydew;
+    height: 40%;
+}
+
+#f{
+    background-color: brown;
+    height: 20%;
+}
+
+#c{
+    display: flex;
+    flex-direction:row;
+    background-color: aquamarine
+}
+
+#l{
+    background-color: lightblue;
+    height: 100%;
+    width: 30%;
+}
+
+#m{
+    background-color: lightcoral;
+    height: 100%;
+    width: 40%;
+}
+
+#r{
+    background-color:lightcyan;
+    height: 100%;
+    width: 30%
+}
