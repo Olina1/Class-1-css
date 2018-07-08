@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Question one</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div> 
+        The first number<input type="text" id="number1" />
+    </div>
+    <div> 
+        The second number<input type="text" id="number2" />
+    </div>
+    <div>
+        <input type="button" value="Calculate" id="calculate" onclick="Do()" />
+    </div>
+    <div>
+        <label id="result"></label>
+    </div>
+</body>
+    <script>
+            function Do()
+            {
+                var number11 = document.getElementById("number1").value
+                console.log(number11)
+                var number22 = document.getElementById("number2").value
+                console.log(number22)
+                var result = parseInt(number11) + parseInt(number22)
+                var labelResult = document.getElementById("result")
+                labelResult.innerText = result;
+                console.log(result)
+            }
+    </script>
+</html>

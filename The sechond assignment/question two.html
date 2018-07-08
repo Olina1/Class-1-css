@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Question two</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div>
+       Please input here <input type="text" id="input_content" />
+    </div>
+    <div>
+        <input type="button" value="Judge" id="Judge" onclick="Do()" />
+    </div>
+    <div>
+        <label id="result"></label>
+    </div>
+    
+</body>
+
+<script>
+    function Do()
+    {
+        var input_content = document.getElementById("input_content").value
+        console.log(input_content)
+        var number_content = parseInt(input_content)
+        var labelResult = document.getElementById("result")
+        if (number_content%2 == 0)
+        {
+            console.log("It is an even")
+            labelResult.innerText = "It is an even";
+        }
+        else
+        {
+            console.log("It is an odd")
+            labelResult.innerText = "It is an odd"
+        }
+    }
+</script>
+</html>
